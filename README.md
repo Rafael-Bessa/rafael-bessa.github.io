@@ -1,4 +1,4 @@
-# Rafael Bessa — Portfólio profissional
+# Rafael Morangon Bessa — Portfólio profissional
 
 Portfólio pessoal publicado no GitHub Pages para apresentar projetos técnicos, stack, formação, cursos e conteúdo em vídeo.
 
@@ -22,3 +22,14 @@ Portfólio pessoal publicado no GitHub Pages para apresentar projetos técnicos,
 ## Publicação
 
 O repositório `Rafael-Bessa/rafael-bessa.github.io` é publicado pelo GitHub Pages. Depois de substituir os arquivos e executar `git push origin main`, o site é atualizado automaticamente após o deploy.
+
+
+## Estrutura da versão atual
+- Projetos técnicos como estudos de caso
+- Stack e arquitetura
+- Formação em Análise e Desenvolvimento de Sistemas
+- Biblioteca de cursos e certificados (Alura, USP, ITA, IBM e complementares)
+- YouTube e comunicação técnica
+- Contato profissional
+
+A experiência anterior fora de TI permanece no currículo, mas não faz parte da narrativa principal deste site.
