@@ -863,3 +863,37 @@ details[open] summary i { transform: rotate(45deg); }
   .learning-proof > div { min-height: 105px; padding: .9rem; }
   .course-accordion summary small { display: none; }
 }
+
+/* Learning library — verified credentials */
+.course-note {
+  margin: .85rem 0 0;
+  color: var(--subtle);
+  font-size: .78rem;
+  line-height: 1.65;
+}
+.credential-static {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-soft);
+}
+.credential-static strong { display: block; letter-spacing: -.02em; }
+.credential-static > div > span { display: block; margin-top: .28rem; color: var(--muted); font-size: .82rem; }
+.credential-badge {
+  flex: 0 0 auto;
+  padding: .38rem .62rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--accent-text);
+  font: 600 .68rem/1 "JetBrains Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.profile-callout p { margin-top: 0; color: var(--muted); line-height: 1.7; }
+@media (max-width: 620px) {
+  .credential-static { align-items: flex-start; flex-direction: column; }
+}

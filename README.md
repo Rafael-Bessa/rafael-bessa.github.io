@@ -33,3 +33,8 @@ O repositório `Rafael-Bessa/rafael-bessa.github.io` é publicado pelo GitHub Pa
 - Contato profissional
 
 A experiência anterior fora de TI permanece no currículo, mas não faz parte da narrativa principal deste site.
+
+
+## Credenciais verificadas
+
+A seção de aprendizado foi revisada para que os nomes exibidos correspondam aos destinos dos links públicos. Foram corrigidos mapeamentos de certificados Coursera (USP, ITA, IBM, Meta e SkillUp), cargas horárias de trilhas Alura e adicionada a formação presencial FJ-11 de 2019.
