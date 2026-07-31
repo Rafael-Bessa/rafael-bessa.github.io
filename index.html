@@ -3,253 +3,387 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfólio de Rafael Bessa, Analista de Sistemas e Desenvolvedor Backend Java. Projetos com Java, Spring Boot, APIs REST, SQL, microsserviços, testes e Angular.">
-  <meta name="theme-color" content="#f8fafc">
-  <meta property="og:title" content="Rafael Bessa | Analista de Sistemas e Desenvolvedor Backend Java">
-  <meta property="og:description" content="Projetos e experiência técnica em Java, Spring Boot, APIs REST, SQL, testes, Docker e microsserviços.">
+  <meta name="description" content="Portfólio de Rafael Bessa — Analista de Sistemas e Desenvolvedor Backend Java. Projetos em Java, Spring Boot, APIs REST, microsserviços, SQL, testes, Docker e Angular.">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta property="og:title" content="Rafael Bessa | Sistemas & Backend Java">
+  <meta property="og:description" content="Projetos, arquitetura, cursos e aprendizado contínuo em desenvolvimento de software.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rafael-bessa.github.io/">
-  <title>Rafael Bessa | Analista de Sistemas & Desenvolvedor Backend Java</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://rafael-bessa.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260731-3">
+  <title>Rafael Bessa | Sistemas & Backend Java</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rafael Bessa",
+    "url": "https://rafael-bessa.github.io/",
+    "jobTitle": "Analista de Sistemas e Desenvolvedor Backend Java",
+    "sameAs": [
+      "https://github.com/Rafael-Bessa",
+      "https://www.linkedin.com/in/rafaelmbessa",
+      "https://www.youtube.com/@rafaelmbessa"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <header class="site-header" id="topo">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#topo" aria-label="Rafael Bessa, início">
-        <span class="brand-mark" aria-hidden="true">RB</span>
-        <span>Rafael Bessa</span>
+  <header class="topbar" id="topo">
+    <div class="container nav-shell">
+      <a class="brand" href="#topo" aria-label="Rafael Bessa — início">
+        <span class="brand-mark">RB</span>
+        <span class="brand-name">Rafael Bessa</span>
       </a>
 
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-main">
         <span class="sr-only">Abrir menu</span>
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <nav class="nav-main" id="nav-main" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#competencias">Competências</a>
-        <a href="#formacao">Formação</a>
-        <a href="#experiencia">Experiência</a>
+        <a href="#stack">Stack</a>
+        <a href="#aprendizado">Aprendizado</a>
+        <a href="#videos">Vídeos</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+        <span aria-hidden="true" class="theme-icon">◐</span>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">São Paulo, SP · Tecnologia & Sistemas</p>
-        <h1 id="hero-title">Analista de Sistemas <span>&</span><br>Desenvolvedor Backend Java</h1>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse" aria-hidden="true"></span> Aberto a oportunidades em tecnologia</div>
+        <p class="kicker">Sistemas · Backend · Arquitetura</p>
+        <h1 id="hero-title">Backend Java com <span class="gradient-text">visão de sistemas.</span></h1>
         <p class="hero-lead">
-          Formado em Análise e Desenvolvimento de Sistemas, com projetos públicos em Java 17/21, Spring Boot,
-          APIs REST, SQL, testes automatizados, Docker, Angular e arquitetura de microsserviços.
+          Sou formado em Análise e Desenvolvimento de Sistemas e construo aplicações com foco em
+          regras de negócio, APIs bem estruturadas, segurança, dados, testes e integração entre serviços.
         </p>
-        <div class="hero-actions" aria-label="Links principais">
-          <a class="button primary" href="#projetos">Ver projetos</a>
-          <a class="button secondary" href="assets/curriculo-rafael-bessa.pdf" target="_blank" rel="noopener noreferrer">Ver currículo</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="https://github.com/Rafael-Bessa" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-text" href="assets/curriculo-rafael-bessa.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
         </div>
-        <div class="social-links">
-          <a href="https://github.com/Rafael-Bessa" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div class="hero-links" aria-label="Redes profissionais">
           <a href="https://www.linkedin.com/in/rafaelmbessa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://www.youtube.com/@rafaelmbessa" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="mailto:rafaelbessadev@gmail.com">E-mail</a>
         </div>
       </div>
 
-      <aside class="hero-panel" aria-label="Resumo técnico">
-        <p class="panel-label">Foco atual</p>
-        <h2>Java + análise de sistemas</h2>
-        <p>Desenvolvimento backend com visão de requisitos, regras de negócio, dados, integração e qualidade de software.</p>
-        <div class="tech-cloud" aria-label="Tecnologias principais">
-          <span>Java 17/21</span><span>Spring Boot</span><span>SQL</span><span>REST</span>
-          <span>JUnit</span><span>Docker</span><span>Angular</span><span>RabbitMQ</span>
-        </div>
-      </aside>
-    </section>
-
-    <section class="section section-muted" id="projetos" aria-labelledby="projetos-title">
-      <div class="shell">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Código público</p>
-            <h2 id="projetos-title">Projetos selecionados</h2>
+      <div class="hero-visual reveal" aria-label="Resumo técnico de Rafael Bessa">
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <small>rafael.profile()</small>
           </div>
-          <p>Quatro projetos que representam melhor minha evolução técnica e o tipo de problema que gosto de resolver.</p>
+          <pre><code><span class="code-key">const</span> rafael = {
+  foco: <span class="code-value">"Backend Java"</span>,
+  formacao: <span class="code-value">"ADS"</span>,
+  stack: [
+    <span class="code-value">"Java 17/21"</span>,
+    <span class="code-value">"Spring Boot"</span>,
+    <span class="code-value">"SQL"</span>,
+    <span class="code-value">"Docker"</span>
+  ],
+  modo: <span class="code-value">"aprender + construir"</span>
+};</code></pre>
+          <div class="terminal-foot">
+            <span class="status-dot"></span>
+            <span>São Paulo, Brasil</span>
+          </div>
+        </div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Resumo do portfólio">
+      <div class="container signal-grid">
+        <div><strong>4</strong><span>projetos em destaque</span></div>
+        <div><strong>Java 17/21</strong><span>stack principal</span></div>
+        <div><strong>Spring Boot</strong><span>backend & APIs</span></div>
+        <div><strong>2 graduações</strong><span>tecnologia + engenharia</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Trabalho prático</p>
+            <h2 id="projects-title">Projetos que mostram como eu penso.</h2>
+          </div>
+          <p>Mais do que listar tecnologias, aqui estão problemas, decisões e implementações que consigo abrir e explicar no código.</p>
         </div>
 
-        <div class="projects-grid">
-          <article class="project-card featured">
-            <div class="project-topline"><span class="project-number">01</span><span class="project-type">Full stack</span></div>
+        <article class="project-showcase project-taskflow reveal">
+          <div class="project-copy">
+            <div class="project-meta"><span>01</span><span>Full stack</span><span>Projeto principal</span></div>
             <h3>TaskFlow</h3>
-            <p>Gerenciamento de tarefas com 12 endpoints REST, autenticação JWT stateless, paginação, validação e isolamento de tarefas por usuário autenticado.</p>
-            <ul class="project-points">
-              <li>Backend em camadas com DTOs, JPA/Hibernate e Spring Security.</li>
-              <li>Frontend Angular consumindo a API com Bearer token.</li>
-              <li>Testes com JUnit 5 e Mockito em service, controller e repository.</li>
-            </ul>
-            <div class="tags"><span>Java 17</span><span>Spring Boot</span><span>Angular</span><span>JWT</span><span>SQL Server</span></div>
-            <a class="project-link" href="https://github.com/Rafael-Bessa/TaskFlow" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+            <p class="project-intro">Uma aplicação de gerenciamento de tarefas que conecta autenticação, regras de negócio, persistência e frontend em um fluxo completo.</p>
+            <div class="project-story">
+              <div><small>O desafio</small><p>Organizar tarefas por usuário com segurança, filtros, paginação e validações.</p></div>
+              <div><small>A solução</small><p>API REST em camadas, JWT stateless, JPA/Hibernate e frontend Angular consumindo a API.</p></div>
+              <div><small>Qualidade</small><p>12 endpoints REST e testes com JUnit 5/Mockito em service, controller e repository.</p></div>
+            </div>
+            <div class="tech-tags"><span>Java 17</span><span>Spring Boot</span><span>Spring Security</span><span>Angular</span><span>JWT</span><span>SQL Server</span></div>
+            <a class="text-link" href="https://github.com/Rafael-Bessa/TaskFlow" target="_blank" rel="noopener noreferrer">Abrir repositório <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="task-board">
+                <div class="board-col"><b>A fazer</b><span></span><span class="short"></span><span></span></div>
+                <div class="board-col"><b>Em andamento</b><span></span><span class="short"></span></div>
+                <div class="board-col"><b>Concluído</b><span class="done"></span><span class="done short"></span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="architecture-map" aria-hidden="true">
+              <span>Gateway</span><i>→</i><span>Auth</span>
+              <i>↘</i><span>Order</span><i>→</i><span>RabbitMQ</span>
+              <i>↘</i><span>Product</span><i>→</i><span>Redis</span>
+            </div>
+            <p class="project-type">Microsserviços</p>
+            <h3>E-commerce distribuído</h3>
+            <p>Gateway, descoberta de serviços, comunicação síncrona e assíncrona, tolerância a falhas, cache e tracing em uma arquitetura distribuída.</p>
+            <div class="tech-tags"><span>Spring Cloud</span><span>Eureka</span><span>OpenFeign</span><span>RabbitMQ</span><span>Redis</span><span>Zipkin</span><span>Docker</span></div>
+            <a class="text-link" href="https://github.com/Rafael-Bessa/ecommerce-microservices-spring" target="_blank" rel="noopener noreferrer">Abrir repositório <span aria-hidden="true">↗</span></a>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">02</span><span class="project-type">Microsserviços</span></div>
-            <h3>E-commerce</h3>
-            <p>Plataforma distribuída com serviços de autenticação, produtos e pedidos, API Gateway e descoberta de serviços.</p>
-            <ul class="project-points">
-              <li>OpenFeign com Circuit Breaker e fallback via Resilience4j.</li>
-              <li>RabbitMQ para evento de pedido e atualização de estoque.</li>
-              <li>Cache Redis, tracing Zipkin e orquestração Docker Compose.</li>
-            </ul>
-            <div class="tags"><span>Spring Cloud</span><span>RabbitMQ</span><span>Redis</span><span>Docker</span><span>Zipkin</span></div>
-            <a class="project-link" href="https://github.com/Rafael-Bessa/ecommerce-microservices-spring" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">03</span><span class="project-type">REST API</span></div>
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="mini-api" aria-hidden="true">
+              <span><b>POST</b> /receitas</span>
+              <span><b>GET</b> /despesas</span>
+              <span><b>GET</b> /resumo/{ano}/{mes}</span>
+            </div>
+            <p class="project-type">REST API</p>
             <h3>Orçamento Familiar</h3>
-            <p>API para receitas e despesas categorizadas, com filtros por descrição e período, resumo mensal, autenticação JWT e documentação Swagger.</p>
-            <ul class="project-points">
-              <li>Persistência com Spring Data JPA e MySQL.</li>
-              <li>Testes automatizados em controllers e repository.</li>
-              <li>Aplicação e banco executados com Docker Compose.</li>
-            </ul>
-            <div class="tags"><span>Java 17</span><span>Spring Security</span><span>MySQL</span><span>Swagger</span><span>JUnit</span></div>
-            <a class="project-link" href="https://github.com/Rafael-Bessa/family-budget-api" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+            <p>API para receitas e despesas categorizadas, filtros por período, resumo mensal, autenticação JWT, documentação e execução com Docker Compose.</p>
+            <div class="tech-tags"><span>Spring Boot</span><span>Spring Security</span><span>MySQL</span><span>Swagger</span><span>JUnit</span></div>
+            <a class="text-link" href="https://github.com/Rafael-Bessa/family-budget-api" target="_blank" rel="noopener noreferrer">Abrir repositório <span aria-hidden="true">↗</span></a>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">04</span><span class="project-type">Web app</span></div>
+          <article class="project-card reveal">
+            <div class="project-number">04</div>
+            <div class="risk-visual" aria-hidden="true">
+              <div><span>R$ 100k+</span><small>transação</small></div>
+              <div><span>R$ 1M+</span><small>movimentação/mês</small></div>
+            </div>
+            <p class="project-type">Web application</p>
             <h3>Análise de Transações Financeiras</h3>
-            <p>Aplicação para upload e processamento em lote de CSV, com regras para sinalizar transações e movimentações suspeitas.</p>
-            <ul class="project-points">
-              <li>Regras para transações a partir de R$ 100 mil e contas acima de R$ 1 milhão/mês.</li>
-              <li>Proteção de rotas, auditoria por usuário/data e prevenção de duplicidades.</li>
-              <li>Testes de fluxo com JUnit e Selenium.</li>
-            </ul>
-            <div class="tags"><span>Spring Boot</span><span>Thymeleaf</span><span>H2</span><span>Selenium</span><span>JUnit</span></div>
-            <a class="project-link" href="https://github.com/Rafael-Bessa/financial-fraud-detector" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+            <p>Upload de CSV, processamento em lote, regras automáticas para operações suspeitas, auditoria, proteção de rotas e testes de fluxo.</p>
+            <div class="tech-tags"><span>Spring Boot</span><span>Thymeleaf</span><span>H2</span><span>JUnit</span><span>Selenium</span></div>
+            <a class="text-link" href="https://github.com/Rafael-Bessa/financial-fraud-detector" target="_blank" rel="noopener noreferrer">Abrir repositório <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section shell" id="competencias" aria-labelledby="competencias-title">
-      <div class="section-heading compact">
-        <div>
-          <p class="eyebrow">Ferramentas e fundamentos</p>
-          <h2 id="competencias-title">Competências</h2>
+    <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Como eu construo</p>
+            <h2 id="stack-title">Stack organizada por capacidade.</h2>
+          </div>
+          <p>O objetivo não é colecionar logos: é mostrar como as peças se conectam para construir e analisar sistemas.</p>
         </div>
-      </div>
 
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>Backend</h3>
-          <p>Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, APIs REST, JWT e OpenAPI/Swagger.</p>
-        </article>
-        <article class="skill-card">
-          <h3>Análise de sistemas</h3>
-          <p>Conhecimentos em requisitos, regras de negócio, modelagem de dados, documentação técnica, testes, APIs, integrações e processos empresariais.</p>
-        </article>
-        <article class="skill-card">
-          <h3>Arquitetura & dados</h3>
-          <p>Microsserviços, Spring Cloud Gateway, Eureka, OpenFeign, Resilience4j, SQL, MySQL, PostgreSQL, SQL Server e H2.</p>
-        </article>
-        <article class="skill-card">
-          <h3>Qualidade & infraestrutura</h3>
-          <p>JUnit 5, Mockito, Selenium, Git/GitHub, GitHub Actions, Maven, Gradle, Docker Compose, RabbitMQ, Redis e Zipkin.</p>
-        </article>
-        <article class="skill-card">
-          <h3>Frontend & cloud</h3>
-          <p>Angular, TypeScript, HTML5, CSS3 e fundamentos de AWS. Práticas: Clean Code, SOLID e metodologias ágeis.</p>
-        </article>
-        <article class="skill-card">
-          <h3>ERP & processos</h3>
-          <p>Noções introdutórias de SAP/ERP e compreensão de processos integrados de negócio.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="formacao" aria-labelledby="formacao-title">
-      <div class="shell two-column">
-        <div>
-          <p class="eyebrow">Base acadêmica</p>
-          <h2 id="formacao-title">Formação</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-date">2025</span>
-            <div><h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3><p>Universidade Paulista (UNIP)</p></div>
+        <div class="capabilities">
+          <article class="capability reveal">
+            <span class="cap-index">01</span>
+            <h3>Backend & APIs</h3>
+            <p>Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, JWT e OpenAPI/Swagger.</p>
           </article>
-          <article class="timeline-item">
-            <span class="timeline-date">2016</span>
-            <div><h3>Bacharelado em Engenharia Civil</h3><p>Universidade Presbiteriana Mackenzie</p></div>
+          <article class="capability reveal">
+            <span class="cap-index">02</span>
+            <h3>Sistemas & dados</h3>
+            <p>Requisitos, regras de negócio, modelagem de dados, documentação técnica, SQL, MySQL, PostgreSQL e SQL Server.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="cap-index">03</span>
+            <h3>Arquitetura distribuída</h3>
+            <p>Spring Cloud Gateway, Eureka, OpenFeign, Resilience4j, RabbitMQ, Redis, Zipkin e Docker Compose.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="cap-index">04</span>
+            <h3>Qualidade & entrega</h3>
+            <p>JUnit 5, Mockito, Selenium, Git/GitHub, GitHub Actions, Maven, Gradle, Clean Code e SOLID.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="cap-index">05</span>
+            <h3>Frontend & integração</h3>
+            <p>Angular, TypeScript, HTML5 e CSS3 para construir interfaces e integrar aplicações às APIs.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="cap-index">06</span>
+            <h3>Cloud & processos</h3>
+            <p>Fundamentos de AWS, metodologias ágeis e noções introdutórias de ERP SAP e processos empresariais.</p>
           </article>
         </div>
       </div>
+    </section>
 
-      <div class="shell learning-block">
-        <h3>Formação complementar selecionada</h3>
-        <div class="learning-grid">
-          <p><strong>USP / Coursera</strong><br>Introdução à Ciência da Computação com Python e Laboratório de Programação Orientada a Objetos.</p>
-          <p><strong>ITA / Coursera</strong><br>Orientação a Objetos com Java e Desenvolvimento Ágil com Java Avançado.</p>
-          <p><strong>IBM / Coursera</strong><br>Introduction to Software Engineering.</p>
-          <p><strong>Alura</strong><br>Formações em Java, Spring Boot, AWS e Engenharia de Software; curso de Clean Code.</p>
+    <section class="section learning-section" id="aprendizado" aria-labelledby="learning-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Aprendizado contínuo</p>
+            <h2 id="learning-title">Formação é base. Curso é aprofundamento.</h2>
+          </div>
+          <p>Aqui o portfólio vai além do currículo: ficam as trilhas, instituições e certificados que mostram como fui aprofundando o repertório técnico.</p>
+        </div>
+
+        <div class="education-grid reveal">
+          <article class="degree-card degree-primary">
+            <span class="degree-year">2025</span>
+            <p class="degree-label">Graduação em tecnologia</p>
+            <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+            <p>Universidade Paulista — UNIP</p>
+            <a href="https://drive.google.com/file/d/1jktaAemNaOfn2vtkpbm7nTdMc1I4pLen/view" target="_blank" rel="noopener noreferrer">Ver diploma <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="degree-card">
+            <span class="degree-year">2016</span>
+            <p class="degree-label">Graduação anterior</p>
+            <h3>Bacharelado em Engenharia Civil</h3>
+            <p>Universidade Presbiteriana Mackenzie</p>
+          </article>
+        </div>
+
+        <div class="learning-layout">
+          <div class="learning-intro reveal">
+            <p class="section-label">Trilhas selecionadas</p>
+            <h3>Mais profundidade, menos lista infinita.</h3>
+            <p>Organizei os cursos por instituição e tema. Os principais certificados continuam clicáveis, mas sem transformar a página em uma parede de links.</p>
+            <a class="text-link" href="https://cursos.alura.com.br/user/rafaelbessa" target="_blank" rel="noopener noreferrer">Perfil completo na Alura <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="course-accordion reveal">
+            <details open>
+              <summary><span><b>Alura</b><small>7 formações técnicas</small></span><i>+</i></summary>
+              <div class="course-body formation-grid">
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-java-v142134-142134/certificate" target="_blank" rel="noopener noreferrer"><strong>Java com OOP</strong><span>121h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-spring-framework-136314/certificate" target="_blank" rel="noopener noreferrer"><strong>Spring Framework</strong><span>123h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-spring-boot-3-475714/certificate" target="_blank" rel="noopener noreferrer"><strong>Spring Boot 3</strong><span>40h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-java-web-475746/certificate" target="_blank" rel="noopener noreferrer"><strong>Java Web MVC</strong><span>86h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-banco-dados-java-v475778-475778/certificate" target="_blank" rel="noopener noreferrer"><strong>Banco de Dados</strong><span>32h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-amazon-web-services-442434/certificate" target="_blank" rel="noopener noreferrer"><strong>Amazon AWS</strong><span>47h</span></a>
+                <a href="https://cursos.alura.com.br/user/rafaelbessa/degree-engenharia-software-287214/certificate" target="_blank" rel="noopener noreferrer"><strong>Engenharia de Software</strong><span>86h</span></a>
+              </div>
+            </details>
+
+            <details>
+              <summary><span><b>USP · Coursera</b><small>Ciência da computação e testes</small></span><i>+</i></summary>
+              <div class="course-body course-list">
+                <a href="https://www.coursera.org/account/accomplishments/verify/2FU5RER5PYR7" target="_blank" rel="noopener noreferrer">Introdução à Ciência da Computação com Python — Parte 1 <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/3KDUX5PPFAQW" target="_blank" rel="noopener noreferrer">Introdução à Ciência da Computação com Python — Parte 2 <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/S4YDG45XYLFJ" target="_blank" rel="noopener noreferrer">Introdução ao Teste de Software <span>↗</span></a>
+              </div>
+            </details>
+
+            <details>
+              <summary><span><b>ITA · Coursera</b><small>Agilidade, padrões e TDD</small></span><i>+</i></summary>
+              <div class="course-body course-list">
+                <a href="https://www.coursera.org/account/accomplishments/verify/9VJPM6WRQU2Y" target="_blank" rel="noopener noreferrer">Princípios de Desenvolvimento Ágil de Software <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/D2ZM9EAG7A2F" target="_blank" rel="noopener noreferrer">Desenvolvimento Ágil com Padrões de Projeto <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/DALGGVSC7Z6V" target="_blank" rel="noopener noreferrer">TDD — Desenvolvimento de Software Guiado por Testes <span>↗</span></a>
+              </div>
+            </details>
+
+            <details>
+              <summary><span><b>IBM · Coursera</b><small>Engenharia, cloud e Git</small></span><i>+</i></summary>
+              <div class="course-body course-list">
+                <a href="https://www.coursera.org/account/accomplishments/verify/PDQM42J9MPYE" target="_blank" rel="noopener noreferrer">Introduction to Software Engineering <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/8X0TE1ORZKE8" target="_blank" rel="noopener noreferrer">Introduction to Cloud Computing <span>↗</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/4DKLY9DBEHEJ" target="_blank" rel="noopener noreferrer">Getting Started with Git and GitHub <span>↗</span></a>
+              </div>
+            </details>
+
+            <details>
+              <summary><span><b>Cursos complementares</b><small>SQL, modelagem, Git, QA e web</small></span><i>+</i></summary>
+              <div class="course-body topic-grid">
+                <div><b>Banco de dados</b><span>MySQL · SQL · Joins · Views · Transações · Modelagem relacional</span></div>
+                <div><b>Versionamento</b><span>Git · GitHub · branches · colaboração e fluxo de commits</span></div>
+                <div><b>Qualidade</b><span>QA · gestão de bugs · testes · Scrum · XP</span></div>
+                <div><b>Web & modelagem</b><span>HTTP · HTML5 · CSS3 · UML</span></div>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section shell" id="experiencia" aria-labelledby="experiencia-title">
-      <div class="section-heading compact">
-        <div>
-          <p class="eyebrow">Trajetória profissional</p>
-          <h2 id="experiencia-title">Experiência</h2>
+    <section class="section video-section" id="videos" aria-labelledby="videos-title">
+      <div class="container video-layout">
+        <div class="video-copy reveal">
+          <p class="section-label">Conteúdo em vídeo</p>
+          <h2 id="videos-title">Aprender também é conseguir explicar.</h2>
+          <p>Uso o YouTube como espaço de estudo e comunicação. Gravar vídeos é uma forma de organizar ideias, praticar explicações e transformar aprendizado em algo compartilhável.</p>
+          <div class="video-actions">
+            <a class="btn btn-youtube" href="https://www.youtube.com/@rafaelmbessa" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> Abrir canal no YouTube</a>
+          </div>
         </div>
-        <p>Experiência anterior que fortaleceu análise, documentação, organização de processos, atendimento e resolução de problemas.</p>
-      </div>
 
-      <div class="experience-list">
-        <article class="experience-item">
-          <div class="experience-meta"><span>2021 — jan. 2026</span></div>
-          <div><h3>Assistente de Engenharia e Orçamentista</h3><p class="company">Kalupe Construções</p><p>Orçamentos, levantamentos quantitativos, cotações, planilhas de custos e organização de documentação técnica e administrativa, com acompanhamento de prazos e pendências.</p></div>
-        </article>
-        <article class="experience-item">
-          <div class="experience-meta"><span>2018 — 2021</span></div>
-          <div><h3>Engenheiro Civil Autônomo</h3><p class="company">Regularização de imóveis residenciais</p><p>Projetos e documentação para regularização, levantamentos, protocolos e acompanhamento em órgãos públicos no Estado de São Paulo.</p></div>
-        </article>
-        <article class="experience-item">
-          <div class="experience-meta"><span>2014</span></div>
-          <div><h3>Estagiário de Engenharia Civil</h3><p class="company">Gafisa</p><p>Acompanhamento de obra, qualidade e prazos; apoio a requisições de materiais, mapas de concorrência e registros técnicos.</p></div>
-        </article>
+        <div class="video-player reveal">
+          <div class="player-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed?listType=user_uploads&list=rafaelmbessa"
+              title="Vídeos do canal Rafael Bessa no YouTube"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <p class="player-note">Player de uploads do canal. Se o YouTube não carregar a lista automaticamente, o botão ao lado abre o canal diretamente.</p>
+        </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contato" aria-labelledby="contato-title">
-      <div class="shell contact-card">
-        <div>
-          <p class="eyebrow">Vamos conversar</p>
-          <h2 id="contato-title">Aberto a oportunidades em tecnologia.</h2>
-          <p>Busco posições de Analista de Sistemas, Analista Funcional ou Desenvolvedor Backend Java em nível júnior.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:rafaelbessadev@gmail.com">Enviar e-mail</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/rafaelmbessa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <section class="section contact-section" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="section-label">Contato</p>
+            <h2 id="contact-title">Vamos conversar sobre sistemas, Java ou uma oportunidade?</h2>
+            <p>Se meu perfil fizer sentido para seu time, você pode me encontrar pelos canais abaixo.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:rafaelbessadev@gmail.com"><span>E-mail</span><strong>rafaelbessadev@gmail.com</strong></a>
+            <a href="https://www.linkedin.com/in/rafaelmbessa" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>/in/rafaelmbessa ↗</strong></a>
+            <a href="https://github.com/Rafael-Bessa" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>/Rafael-Bessa ↗</strong></a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-wrap">
+    <div class="container footer-shell">
       <p>© <span id="year"></span> Rafael Bessa.</p>
-      <div>
-        <a href="https://github.com/Rafael-Bessa" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.youtube.com/@rafaelmbessa" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="#topo">Voltar ao topo ↑</a>
-      </div>
+      <p>Construído com HTML, CSS e JavaScript — publicado no GitHub Pages.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260731-3"></script>
 </body>
 </html>
