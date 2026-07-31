@@ -1,50 +1,19 @@
-// Animações JavaScript com Intersection Observer
-document.addEventListener('DOMContentLoaded', function() {
-    // Fade-in das seções ao scroll
-    const sections = document.querySelectorAll('.fade-in');
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('.main-nav');
 
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                sectionObserver.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        sectionObserver.observe(section);
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
     });
+  });
+}
 
-    // Smooth scroll para links internos
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Hover effects nos cards
-    const cards = document.querySelectorAll('.project-card, .stack-item, .timeline-item');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.02)';
-        });
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    });
-
-    console.log('Portfolio carregado com sucesso!');
-});
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
