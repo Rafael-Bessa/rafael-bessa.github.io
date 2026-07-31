@@ -38,3 +38,8 @@ A experiência anterior fora de TI permanece no currículo, mas não faz parte d
 ## Credenciais verificadas
 
 A seção de aprendizado foi revisada para que os nomes exibidos correspondam aos destinos dos links públicos. Foram corrigidos mapeamentos de certificados Coursera (USP, ITA, IBM, Meta e SkillUp), cargas horárias de trilhas Alura e adicionada a formação presencial FJ-11 de 2019.
+
+
+## YouTube em destaque
+
+O portfólio incorpora um vídeo específico do canal (`Qwy9hpOseiI`) usando o player oficial do YouTube e apresenta dois conteúdos adicionais como atalhos visuais.
